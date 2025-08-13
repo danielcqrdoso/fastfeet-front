@@ -28,7 +28,7 @@ export default function ProductPage() {
     <>
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '15px', }}>
         <HeaderPackages css={{ height: '100px', }} isRow={true}>
-          <div style={{ display: 'flex', alignItems: 'start' }}>
+          <div onClick={() => router.push('/packages')} style={{ display: 'flex', alignItems: 'start' }}>
             <Image src={arrow} alt="" style={{ width: '4rem', height: '4rem' }} />
           </div>
 

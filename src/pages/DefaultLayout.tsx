@@ -1,4 +1,3 @@
-import { AppProps } from "next/app"
 import { globalStyles } from "../styles/global"
 
 import logoImg from "../images/header/logo.svg"

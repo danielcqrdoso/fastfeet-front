@@ -1,0 +1,47 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "How it starts",
+  "steps": [
+    {
+      "file": "src/styles/index.ts",
+      "description": "It starts here, we import tokens and we pass them to react",
+      "line": 12
+    },
+    {
+      "file": "src/styles/global.ts",
+      "description": "Here we define the global css",
+      "line": 3
+    },
+    {
+      "file": "src/pages/_document.tsx",
+      "description": "We start the react elements here",
+      "line": 4
+    },
+    {
+      "file": "src/pages/index.tsx",
+      "description": "Here we start the index (the first page to run)",
+      "line": 19
+    },
+    {
+      "file": "src/pages/index.tsx",
+      "description": "DefaultLayout has the header and applie some css code",
+      "line": 28
+    },
+    {
+      "file": "src/styles/pages/app.ts",
+      "description": "In this folder we declare the css elements use in every page",
+      "line": 3
+    },
+    {
+      "file": "src/lib/components/ScrollHeader.tsx",
+      "description": "In this folder, we create the React elements that will be used, or possibly used, in many pages",
+      "line": 4
+    },
+    {
+      "file": "src/lib/interfaces/location-params.ts",
+      "description": "In this folder we declare some interfaces that will be used, or possibly used, in many pages",
+      "line": 1
+    }
+  ],
+  "ref": "main"
+}

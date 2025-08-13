@@ -19,7 +19,7 @@ export default function CreateAdmin() {
         sua conta
       </Text>
 
-      <Box transparent padding={false} style={{ display: 'grid', width: '50%', minWidth: '350px', gap: '10px' }}>
+      <Box transparent padding={false} isHalfWidth style={{ display: 'grid', gap: '10px' }}>
         <TextInput src={personIcon} placeholder="Nome completo" />
         <TextInput src={personIcon} placeholder="CPF" />
         <TextInput src={personIcon} placeholder="Email" />
@@ -37,7 +37,7 @@ export default function CreateAdmin() {
         <TextInput src={personIcon} placeholder="Longitude" />
       </Box>
 
-      <Box transparent padding={false} style={{ display: 'grid', width: '50%', minWidth: '350px', gap: '10px', }}>
+      <Box transparent isHalfWidth padding={false} style={{ display: 'grid', gap: '10px', }}>
         <Button variant="primary">
           Criar conta
         </Button>

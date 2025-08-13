@@ -39,7 +39,7 @@ export default function Home() {
             começar suas entregas.
           </Text>
 
-          <Box transparent padding={false} style={{ display: 'grid', width: '50%', minWidth: '350px', gap: '10px', }}>
+          <Box transparent padding={false} isHalfWidth style={{ display: 'grid', gap: '10px', }}>
             <TextInput src={personIcon} placeholder="CPF ou Email" />
             <TextInput src={padLockIcon} placeholder="Senha" isAPassword />
           </Box>
@@ -47,13 +47,11 @@ export default function Home() {
           <Box
             transparent
             padding={false}
+            isColumn={false}
             isCentralized
-          // style={{
-          //   inset: 0,
-          //   margin: 'auto',
-          // }}
+            isHalfWidth
           >
-            <div style={{ display: 'flex', alignItems: 'center', inset: 0, margin: 'auto' }}>
+            <div style={{ display: 'flex', gap: '10px' }}>
               <Checkbox />
               <Text size="lg">Lembrar-me</Text>
             </div>
@@ -61,7 +59,7 @@ export default function Home() {
               Esqueci minha senha
             </Text>
           </Box>
-          <Box transparent padding={false} style={{ display: 'grid', width: '50%', minWidth: '350px', gap: '10px', }}>
+          <Box transparent padding={false} isHalfWidth style={{ display: 'grid', gap: '10px', }}>
             <Button variant="primary" onClick={() => router.push('/packages')}>
               Entrar
             </Button>
@@ -71,31 +69,34 @@ export default function Home() {
             </Button>
           </Box>
         </>
-      )}
+      )
+      }
 
-      {page === PageEnum.FORGOTPASSWORD && (
-        <>
-          <Text css={{ color: colors.white, lineHeight: '1.2', }} size="7xl">
-            <span style={{ color: '#FFC042' }}>Esqueceu</span> <br />
-            sua senha?
-          </Text>
+      {
+        page === PageEnum.FORGOTPASSWORD && (
+          <>
+            <Text css={{ color: colors.white, lineHeight: '1.2', }} size="7xl">
+              <span style={{ color: '#FFC042' }}>Esqueceu</span> <br />
+              sua senha?
+            </Text>
 
-          <Box transparent padding={false} style={{ display: 'grid', width: '50%', minWidth: '350px', gap: '10px', }}>
-            <TextInput src={personIcon} placeholder="CPF ou Email" />
-            <TextInput src={padLockIcon} placeholder="Nova senha" isAPassword />
-          </Box>
+            <Box transparent padding={false} isHalfWidth style={{ display: 'grid', gap: '10px', }}>
+              <TextInput src={personIcon} placeholder="CPF ou Email" />
+              <TextInput src={padLockIcon} placeholder="Nova senha" isAPassword />
+            </Box>
 
-          <Box transparent padding={false} style={{ display: 'grid', width: '50%', minWidth: '350px', gap: '10px', }}>
-            <Button variant="primary">
-              Mudar senha
-            </Button>
-            <Button onClick={() => changePage({ newPage: PageEnum.LOGIN })} variant="third">
-              Voltar
-            </Button>
-          </Box>
-        </>
-      )}
-    </DefaultLayout>
+            <Box transparent padding={false} isHalfWidth style={{ display: 'grid', gap: '10px', }}>
+              <Button variant="primary">
+                Mudar senha
+              </Button>
+              <Button onClick={() => changePage({ newPage: PageEnum.LOGIN })} variant="third">
+                Voltar
+              </Button>
+            </Box>
+          </>
+        )
+      }
+    </DefaultLayout >
   )
 }
 
