@@ -19,13 +19,8 @@
     },
     {
       "file": "src/pages/index.tsx",
-      "description": "Here we start the index (the first page to run)",
+      "description": "Here we start the index (the first page to run).\nDefaultLayout has the header and applie some css code\n\n",
       "line": 19
-    },
-    {
-      "file": "src/pages/index.tsx",
-      "description": "DefaultLayout has the header and applie some css code",
-      "line": 28
     },
     {
       "file": "src/styles/pages/app.ts",
